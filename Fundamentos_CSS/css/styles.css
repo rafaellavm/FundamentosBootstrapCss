@@ -1,0 +1,61 @@
+body{
+    margin:0;
+}
+
+h1{
+     color:red;
+
+}
+
+p{ 
+    color: blue;
+}
+
+.p-texto{
+
+    color:lightcoral;
+}
+
+
+
+.boxmodel{
+    background-color: red;
+    width:200px;
+    height: 200px;
+    padding: 30px 20px;
+    border:3px solid blue;
+    border-width: 5px 1px 20px 10px;
+    border-bottom-style: doubled;
+    border-radius: 10px;
+}
+
+.boxmodel2{
+    background-color: red;
+    width:200px;
+    height: 200px;
+    padding: 20px;
+    /*padding: 30px 20px;
+    border:3px solid blue;
+    border-width: 5px 1px 20px 10px;
+    border-bottom-style: doubled;
+    border-radius: 10px;*/
+}
+
+.boxmodel3{
+    background-color: red;
+    width:200px;
+    height: 200px;
+    padding: 30px 20px;
+    border: 3px solid #000;
+    border-width: 5px 10px 2px 10px;
+    border-width: 20px 10px;
+    border-radius: 15px;
+    margin:50px;
+    margin: 5px 10px 10px 7px;
+}
+
+
+.paragrafo-box{
+    color:#000;
+    margin:0;
+}
