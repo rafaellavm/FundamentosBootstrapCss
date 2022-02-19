@@ -1,37 +1,33 @@
-body{
-    margin:0;
+body {
+    margin: 0;
 }
 
-h1{
-     color:red;
-
+h1 {
+    color: red;
 }
 
-p{ 
+p {
     color: blue;
 }
 
-.p-texto{
-
-    color:lightcoral;
+.p-texto {
+    color: lightcoral;
 }
 
-
-
-.boxmodel{
+.boxmodel {
     background-color: red;
-    width:200px;
+    width: 200px;
     height: 200px;
     padding: 30px 20px;
-    border:3px solid blue;
+    border: 3px solid blue;
     border-width: 5px 1px 20px 10px;
     border-bottom-style: doubled;
     border-radius: 10px;
 }
 
-.boxmodel2{
+.boxmodel2 {
     background-color: red;
-    width:200px;
+    width: 200px;
     height: 200px;
     padding: 20px;
     /*padding: 30px 20px;
@@ -41,21 +37,113 @@ p{
     border-radius: 10px;*/
 }
 
-.boxmodel3{
+.boxmodel3 {
     background-color: red;
-    width:200px;
+    width: 200px;
     height: 200px;
     padding: 30px 20px;
     border: 3px solid #000;
     border-width: 5px 10px 2px 10px;
     border-width: 20px 10px;
     border-radius: 15px;
-    margin:50px;
+    margin: 50px;
     margin: 5px 10px 10px 7px;
 }
 
+.boxmodel4 {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    padding: 30px 20px;
+    border: 3px solid #000;
+    border-width: 5px 10px 2px 10px;
+    border-width: 20px 10px;
+    border-radius: 15px;
+    margin: 50px;
+    margin: 100px 10px 10px 7px;
+    display: inline;
+    /* não aceita nem largura nem altura */
+    display: inline-block;
+    /* vai aceitar a altura e a largura */
+}
 
-.paragrafo-box{
-    color:#000;
-    margin:0;
+.paragrafo-box {
+    color: #000;
+    margin: 0;
+}
+
+
+/* POSITIONS */
+
+
+/* static */
+
+
+/* relative */
+
+
+/* fixed */
+
+
+/* absolute */
+
+
+/* sticky */
+
+.div-position {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    border-bottom: 2px dotted black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: beige;
+}
+
+.static {
+    position: static;
+    /* posição padrão  - ela não é afetada por posicionamento */
+}
+
+.relative {
+    position: relative;
+    /* ele fica relativo ao elemento mais próximo, no caso será influenciado pelo top e pelo left, não se importando 
+    com os outros */
+    background-color: blue;
+    top: 100px;
+    left: 50px;
+}
+
+.absolute {
+    position: absolute;
+    /* ela quebra o fluxo simplesmnete se importando com a posição da borda  - ele ocupa qualquer lugar
+    em que seu antecessor está 
+    
+    respeita a hierarquia do html, até de acordo com o elemento pai*/
+    background-color: purple;
+    right: 0;
+    top: 0;
+}
+
+.mini-div {
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed {
+    position: fixed;
+    /* fica de acordo com a tela, não pelo elemento pai, e ela acompanha a tela */
+    height: 200px;
+    background-color: yellow;
+    bottom: 0;
+    right: 0;
+}
+
+.sticky {
+    position: sticky;
+    /* é parecido com o fixed, fica de acordo com a tela, mas só quando tem a influencia do scroll, quando o scroll passa por ela */
+    height: 200px;
+    background-color: pink;
+    top: 0;
 }
