@@ -101,13 +101,17 @@ p {
 
 .static {
     position: static;
-    /* posição padrão  - ela não é afetada por posicionamento */
+    /* posição padrão  - ela não é afetada por posicionamento 
+    flow do html, não é alterada pelo top, left, right e bottom*/
 }
 
 .relative {
     position: relative;
     /* ele fica relativo ao elemento mais próximo, no caso será influenciado pelo top e pelo left, não se importando 
-    com os outros */
+    com os outros 
+    
+    
+    ela é alterada pelo top, left, bottom e right*/
     background-color: blue;
     top: 100px;
     left: 50px;
@@ -118,7 +122,7 @@ p {
     /* ela quebra o fluxo simplesmnete se importando com a posição da borda  - ele ocupa qualquer lugar
     em que seu antecessor está 
     
-    respeita a hierarquia do html, até de acordo com o elemento pai*/
+    respeita a hierarquia do html, até de acordo com o elemento pai, tipo, se estiver dentro de uma div ela respeita essa div*/
     background-color: purple;
     right: 0;
     top: 0;
@@ -133,7 +137,7 @@ p {
 
 .fixed {
     position: fixed;
-    /* fica de acordo com a tela, não pelo elemento pai, e ela acompanha a tela */
+    /* fica de acordo com a tela, em qualquer lugar, não pelo elemento pai, e ela acompanha a tela */
     height: 200px;
     background-color: yellow;
     bottom: 0;
@@ -146,4 +150,60 @@ p {
     height: 200px;
     background-color: pink;
     top: 0;
+}
+
+
+/* FLOAT - flutuar o elemento pro lado que a gente escolher */
+
+.container {
+    padding: 50px;
+}
+
+.img-float {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+
+/* OVERFLOW: criará um novo contexto de formatação de bloco. Isto é tecnicamente necessário para evitar que um conteúdo flutuante que entre em contato com o objeto 
+dentro da área de rolamento e quebre as linhas do conteúdo para ajustar a disposição do texto. 
+A quebra das linhas ocorre sempre que a barra de rolagem é utilizada, tornando a experiência de rolagem lenta. 
+
+A propriedade overflow define o comportamento de um elemento quando suas dimensões são excedidas pelo conteúdo.
+
+Os valores possíveis dessa propriedade são os seguintes:
+
+visible
+É o valor padrão e define que o conteúdo não será cortado se exceder o tamanho do elemento.
+
+hidden
+O conteúdo excedido não ficará visível.
+
+scroll
+O conteúdo excedido será cortado mas haverá uma barra de rolagem para permitir a visualização completa do mesmo.
+
+auto
+A barra de rolagem será adicionada automaticamente se o conteúdo exceder o tamanho do elemento.
+
+initial
+Ajusta a propriedade para o valor padrão.
+
+inherit
+Herda a propriedade do elemento pai.
+*/
+
+.div-float {
+    overflow: auto;
+}
+
+
+/* imagem do meio vai flutuar pra direita */
+
+.float-right {
+    float: right;
+}
+
+.p-float {
+    color: #000;
 }
