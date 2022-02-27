@@ -252,3 +252,40 @@ Herda a propriedade do elemento pai.
     height: 50%;
     background-color: black;
 }
+
+
+/* MARGIN em ------ 
+em:  está em relação à FONTE do elemento pai */
+
+.pai-em {
+    font-size: 50px;
+}
+
+.em-1 {
+    /* relação de 1 pra 1  = também fica 50px */
+    /* width: 1em; */
+    /* relação de 2 pra 2  = também fica 100px */
+    /* width: 2em; */
+    /* pode ser metade do valor */
+    width: 0.5em;
+    height: 0.5em;
+    /* height: 1em; */
+    background-color: purple;
+}
+
+
+/* MARGIN rem ------  base do elemento raiz = html  - o tamanho da fonte default do html é 16px */
+
+html {
+    font-size: 20px;
+}
+
+.rem-1 {
+    width: .5em;
+    height: 1rem;
+    background-color: blue;
+}
+
+.rem-2 {
+    font-size: 2rem;
+}
